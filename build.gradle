@@ -33,6 +33,11 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    // spring data redis
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    // embedded redis
+    compile('it.ozimov:embedded-redis:0.7.2')
 }
 
 test {
